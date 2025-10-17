@@ -169,6 +169,7 @@ for args in "${ARGS[@]}"; do
          meson setup \
                -Dtests=unsafe -Dslow-tests=true -Dfuzz-tests=true --werror \
                -Dnobody-group=nogroup -Dcryptolib="${CRYPTOLIB:?}" -Ddebug=false \
+               -Dbpf-framework=disabled \
                $args build; then
 
         cat build/meson-logs/meson-log.txt
