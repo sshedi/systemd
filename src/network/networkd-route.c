@@ -1167,7 +1167,7 @@ static int process_route_one(
                         route_detach(route);
                 } else
                         log_route_debug(tmp,
-                                        manager->manage_foreign_routes ? "Kernel removed unknown" : "Ignoring received",
+                                        manager->manage_foreign_routes ? "Kernel removed unknown" : "Ignoring removed",
                                         manager);
 
                 if (req)
